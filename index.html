@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jetbrains PHP</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css" />
+    <!-- jQuery is required -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+<div style="background-image: url('images/bg.jpg');width: 100%;height: 100%;position: fixed;z-index: -99"></div>
+<div style="height: 100px"></div>
+<div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <!--<div class="uk-background-muted uk-padding"></div>-->
+    </div>
+    <div>
+        <div class="uk-background-primary uk-padding uk-light">
+            <div class="uk-container-small">
+                <form action="php/saveCustomer.php" method="get" enctype="text/plain">
+                    <fieldset class="uk-fieldset">
+
+                        <legend class="uk-legend">Add Customer</legend>
+
+                        <div class="uk-margin">
+                            <input name="txtId" class="uk-input" type="text" placeholder="Customer ID">
+                        </div>
+
+                        <div class="uk-margin">
+                            <input name="txtName" class="uk-input" type="text" placeholder="Customer Name">
+                        </div>
+
+                        <div class="uk-margin">
+                            <textarea name="txtAddress" class="uk-textarea" type="text" placeholder="Customer Address"></textarea>
+                        </div>
+
+                    </fieldset>
+                    <button name="btnSave" class="uk-button uk-button-primary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!--<div class="uk-background-secondary uk-padding uk-light">Item</div>-->
+    </div>
+</div>
+
+<svg viewBox="0 0 1280 70" preserveAspectRatio="none" id="headerCurve" fill="blue" role="presentation" aria-hidden="true">
+    <polygon points="1280 0 1280 70 0 70" fill="rgb(34,34,34)"></polygon>
+</svg>
+
+<div style="height: 200px;width: 100%;background-color: #222222">
+
+</div>
+
+</body>
+</html>
